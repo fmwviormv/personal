@@ -1,0 +1,173 @@
+# unbind all
+
+unbind-key	CM-Return	# terminal
+unbind-key	CM-Delete	# lock
+unbind-key	M-question	# menu-exec
+unbind-key	CM-w		# menu-exec-wm
+unbind-key	M-period	# menu-ssh
+unbind-key	M-Return	# window-hide
+unbind-key	M-Down		# window-lower
+unbind-key	M-Up		# window-raise
+unbind-key	M-slash		# menu-window
+unbind-key	C-slash		# menu-cmd
+unbind-key	M-Tab		# window-cycle
+unbind-key	MS-Tab		# window-rcycle
+unbind-key	CM-n		# window-menu-label
+unbind-key	CM-x		# window-delete
+unbind-key	CM-a		# group-toggle-all
+unbind-key	CM-0		# group-toggle-all
+unbind-key	CM-1		# group-toggle-1
+unbind-key	CM-2		# group-toggle-2
+unbind-key	CM-3		# group-toggle-3
+unbind-key	CM-4		# group-toggle-4
+unbind-key	CM-5		# group-toggle-5
+unbind-key	CM-6		# group-toggle-6
+unbind-key	CM-7		# group-toggle-7
+unbind-key	CM-8		# group-toggle-8
+unbind-key	CM-9		# group-toggle-9
+unbind-key	M-Right		# group-cycle
+unbind-key	M-Left		# group-rcycle
+unbind-key	CM-g		# window-group
+unbind-key	CM-f		# window-fullscreen
+unbind-key	CM-m		# window-maximize
+unbind-key	CM-s		# window-stick
+unbind-key	CM-equal	# window-vmaximize
+unbind-key	CMS-equal	# window-hmaximize
+unbind-key	CMS-f		# window-freeze
+unbind-key	CMS-r		# restart
+unbind-key	CMS-q		# quit
+unbind-key	M-h		# window-move-left
+unbind-key	M-j		# window-move-down
+unbind-key	M-k		# window-move-up
+unbind-key	M-l		# window-move-right
+unbind-key	MS-h		# window-move-left-big
+unbind-key	MS-j		# window-move-down-big
+unbind-key	MS-k		# window-move-up-big
+unbind-key	MS-l		# window-move-right-big
+unbind-key	CM-h		# window-resize-left
+unbind-key	CM-j		# window-resize-down
+unbind-key	CM-k		# window-resize-up
+unbind-key	CM-l		# window-resize-right
+unbind-key	CMS-h		# window-resize-left-big
+unbind-key	CMS-j		# window-resize-down-big
+unbind-key	CMS-k		# window-resize-up-big
+unbind-key	CMS-l		# window-resize-right-big
+#unbind-key	C-Left		# ptrmoveleft
+#unbind-key	C-Down		# ptrmovedown
+#unbind-key	C-Up		# ptrmoveup
+#unbind-key	C-Right		# ptrmoveright
+#unbind-key	CS-Left		# bigptrmoveleft
+#unbind-key	CS-Down		# bigptrmovedown
+#unbind-key	CS-Up		# bigptrmoveup
+#unbind-key	CS-Right	# bigptrmoveright
+
+#unbind-mouse	1		# menu-window
+#unbind-mouse	2		# menu-group
+#unbind-mouse	3		# menu-cmd
+unbind-mouse	M-1		# window-move
+unbind-mouse	CM-1		# window-group
+unbind-mouse	M-2		# window-resize
+unbind-mouse	M-3		# window-lower
+unbind-mouse	CMS-3		# window-hide
+
+# bind all
+
+bind-key	S4-Return	terminal
+#bind-key	S4-Delete	lock
+bind-key	4-question	menu-exec
+bind-key	4-w		menu-exec-wm
+bind-key	4-period	menu-ssh
+bind-key	4-Return	window-hide
+bind-key	4-Down		window-lower
+bind-key	4-Up		window-raise
+bind-key	4-slash		menu-window
+bind-key	C4-slash	menu-cmd
+bind-key	4-Tab		window-cycle
+bind-key	S4-Tab		window-rcycle
+bind-key	4-n		window-menu-label
+bind-key	4-x		window-delete
+bind-key	4-a		group-toggle-all
+bind-key	4-0		group-toggle-all
+bind-key	4-1		group-only-1
+bind-key	4-2		group-only-2
+bind-key	4-3		group-only-3
+bind-key	4-4		group-only-4
+bind-key	4-5		group-only-5
+bind-key	4-6		group-only-6
+bind-key	4-7		group-only-7
+bind-key	4-8		group-only-8
+bind-key	4-9		group-only-9
+bind-key	S4-1		window-movetogroup-1
+bind-key	S4-2		window-movetogroup-2
+bind-key	S4-3		window-movetogroup-3
+bind-key	S4-4		window-movetogroup-4
+bind-key	S4-5		window-movetogroup-5
+bind-key	S4-6		window-movetogroup-6
+bind-key	S4-7		window-movetogroup-7
+bind-key	S4-8		window-movetogroup-8
+bind-key	S4-9		window-movetogroup-9
+bind-key	C4-1		group-toggle-1
+bind-key	C4-2		group-toggle-2
+bind-key	C4-3		group-toggle-3
+bind-key	C4-4		group-toggle-4
+bind-key	C4-5		group-toggle-5
+bind-key	C4-6		group-toggle-6
+bind-key	C4-7		group-toggle-7
+bind-key	C4-8		group-toggle-8
+bind-key	C4-9		group-toggle-9
+bind-key	4-Right		group-cycle
+bind-key	4-Left		group-rcycle
+bind-key	4-g		window-group
+bind-key	4-f		window-fullscreen
+bind-key	4-m		window-maximize
+bind-key	4-s		window-stick
+bind-key	4-equal		window-vmaximize
+bind-key	S4-equal	window-hmaximize
+bind-key	S4-f		window-freeze
+bind-key	S4-r		restart
+bind-key	S4-q		quit
+bind-key	S4-h		window-move-left
+bind-key	S4-j		window-move-down
+bind-key	S4-k		window-move-up
+bind-key	S4-l		window-move-right
+bind-key	4-h		window-move-left-big
+bind-key	4-j		window-move-down-big
+bind-key	4-k		window-move-up-big
+bind-key	4-l		window-move-right-big
+bind-key	CS4-h		window-resize-left
+bind-key	CS4-j		window-resize-down
+bind-key	CS4-k		window-resize-up
+bind-key	CS4-l		window-resize-right
+bind-key	C4-h		window-resize-left-big
+bind-key	C4-j		window-resize-down-big
+bind-key	C4-k		window-resize-up-big
+bind-key	C4-l		window-resize-right-big
+#bind-key	CS4-Left	ptrmoveleft
+#bind-key	CS4-Down	ptrmovedown
+#bind-key	CS4-Up		ptrmoveup
+#bind-key	CS4-Right	ptrmoveright
+#bind-key	C4-Left		bigptrmoveleft
+#bind-key	C4-Down		bigptrmovedown
+#bind-key	C4-Up		bigptrmoveup
+#bind-key	C4-Right	bigptrmoveright
+
+#bind-mouse	1		menu-window
+#bind-mouse	2		menu-group
+#bind-mouse	3		menu-cmd
+bind-mouse	4-1		window-move
+bind-mouse	S4-1		window-group
+bind-mouse	4-2		window-resize
+bind-mouse	4-3		window-lower
+bind-mouse	S4-3		window-hide
+
+# my extensions
+
+bind-key	S4-Delete	"/bin/sh -c 'setxkbmap us colemak && xlock -mode maze -speed 40'"
+bind-key	S4-m		"/usr/X11R6/bin/xterm -fullscreen -fa 'Inconsolata:size=16' -title tmux /usr/bin/tmux"
+bind-key	S4-n		"/usr/X11R6/bin/xterm -fullscreen -fa 'Inconsolata:size=16' -title ksh /bin/ksh"
+bind-key	4-space		"/bin/sh -c \"if setxkbmap -query | grep '^layout.*us$' > /dev/null; then setxkbmap ir; else setxkbmap us colemak; fi\""
+bind-key	S4-space	"/bin/sh -c \"if setxkbmap -query | grep '^layout.*us$' > /dev/null; then setxkbmap ir; else setxkbmap us; fi\""
+bind-key	C4-equal	window-vtile
+bind-key	CS4-equal	window-htile
+
+sticky yes

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+sysctl net.inet.ip.forwarding=1
+ifconfig athn0 media autoselect mode 11n mediaopt hostap chan 1
+ifconfig athn0 nwid ssid wpakey passwd                     
+ifconfig athn0 inet 192.168.240.1/24                           
+pfctl -f hostap.pf
+dhcpd athn0

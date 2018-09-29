@@ -1,0 +1,9 @@
+XTerm*loginShell: true
+XTerm*background: black
+XTerm*foreground: rgb:40/d0/c0
+XTerm*ScrollBar: off
+
+UXTerm*loginShell: true
+UXTerm*background: black
+UXTerm*foreground: rgb:40/d0/c0
+UXTerm*ScrollBar: off

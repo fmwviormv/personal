@@ -1,0 +1,21 @@
+config {
+	#hostname ftp5.eu.openbsd.org
+	#hostname anoncvs.comstyle.com
+	#hostname openbsd.cs.toronto.edu
+	#hostname anoncvs.fr.openbsd.org
+	#hostname mirror.osn.de
+	#hostname ftp.hostserver.de
+	#hostname cvsync.allbsd.org
+	hostname anoncvs.eu.openbsd.org
+	#hostname anoncvs.spacehopper.org
+	#hostname anoncvs3.usa.openbsd.org
+	#hostname anoncvs4.usa.openbsd.org
+	#hostname anoncvs2.usa.openbsd.org
+	#hostname anoncvs1.usa.openbsd.org
+	compress
+	collection {
+		name openbsd release rcs
+		prefix /cvs
+		umask 002
+	}
+}

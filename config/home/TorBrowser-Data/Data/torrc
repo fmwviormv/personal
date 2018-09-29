@@ -1,0 +1,3 @@
+ClientTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+DataDirectory /home/user/TorBrowser-Data/Data/tor_data
+UseBridges 1
