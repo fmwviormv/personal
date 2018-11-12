@@ -1,0 +1,134 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{array}
+\usepackage[absolute,overlay]{textpos}
+\usepackage[left=6cm,top=2cm,right=1.5cm,bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+
+\definecolor{lightgray}{HTML}{999999}
+\definecolor{green}{HTML}{C2E15F}
+\definecolor{orange}{HTML}{FDA333}
+\definecolor{purple}{HTML}{D3A4F9}
+\definecolor{red}{HTML}{FB4485}
+\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{darkblue}{HTML}{00008B}
+
+\pagestyle{empty}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+\newcommand{\graynote}[1]{\hfill{\footnotesize\color{lightgray}#1}}
+\newcommand{\follownote}[1]{--- {\footnotesize\color{darkblue}#1}}
+
+\begin{document}
+{\Huge Ali Farzanrad}
+
+\begin{textblock}{3.8}(1.5, 4)
+	\raggedleft
+	\section*{About}
+
+	Ali Farzanrad \\
+	28 years old
+
+	+98 911 871 3396 \\
+	\href{mailto:ali_farzanrad@riseup.net}{ali\_farzanrad@riseup.net} \\
+	\href{mailto:alif@aut.ac.ir}{alif@aut.ac.ir}
+
+	\section*{Languages}
+
+	Native Persian \\
+	Good in English
+
+	\section*{Operating Systems}
+
+	\begin{tabular}{ll}
+		Expert in & OpenBSD \\
+		Good in & Linux Distros \\
+		Good in & Windows
+	\end{tabular}
+
+	\section*{Programming}
+
+	\begin{tabular}{ll}
+		System Programmer \\
+		Android Developer \\
+		Web Developer
+	\end{tabular}
+
+\end{textblock}
+
+\section*{{\color{blue}I}nterests}
+
+theory of computation, computational complexity, computational
+geometry, algorithm design, data structure design, linear algebra
+
+\section*{{\color{red}E}ducation}
+
+\setlength{\extrarowheight}{9pt}
+\begin{tabular}{ll}
+2012--2014 & \parbox[t]{11cm}{
+	\textbf{M.Sc.\ in Computer Science}
+	\graynote{Amirkabir University of Technology}
+
+	Specialization in Intelligence Systems \\[1pt]
+	Thesis: ``Covering Points by Staircase Polygon''
+} \\
+
+2008--2012 & \parbox[t]{11cm}{
+	\textbf{B.Sc.\ in Computer Science}
+	\graynote{Amirkabir University of Technology}
+} \\
+\end{tabular}
+
+\section*{{\color{orange}A}wards and \emph{Honors}}
+
+\begin{tabular}{ll}
+2001 & \parbox[t]{11cm}{
+	Learning about programming in Commodore 64
+	    (17+ years of programming)
+} \\
+
+2007 & \parbox[t]{11cm}{
+	Rewarded as Bronze in National Olympiad in Informatics
+} \\
+
+2011 & \parbox[t]{11cm}{
+	Ranked 4\textsuperscript{TH} among 76 teams 
+	    \follownote{ACM-ICPC Asia Tehran Regional Contest}
+} \\
+
+2012 & \parbox[t]{11cm}{
+	Ranked 1\textsuperscript{ST} among 66 teams
+	    \follownote{ACM-ICPC Asia Kanpur Regional Contest}
+} \\
+
+2013 & \parbox[t]{11cm}{
+	Honorable Mention among 120 teams of three chosen from a
+	    field of 29\,826 contestants from 2\,322 universities in 91
+	    countries on six continents
+	    \follownote{The 37\textsuperscript{TH} ACM-ICPC World Finals}
+} \\
+
+2017 & \parbox[t]{11cm}{
+	Ranked 376\textsuperscript{TH} in Round 3 (25\,288 contestants
+	    had participated from the beginning)
+	    \follownote{Google CodeJam}
+} \\
+\end{tabular}
+
+\section*{{\color{green}P}rogramming \emph{Languages}}
+\begin{itemize}
+	\item C (C90, C99, C11, libevent, pthreads, \ldots)
+	\item C++ (C++98, C++11, C++14, \ldots)
+	\item Java (Java 7, Java 8, \ldots)
+	\item C\# (.Net Framework 4, ASP.NET MVC, \ldots)
+	\item Python (Python 3.x, Django, \ldots)
+	\item JavaScript (ES5, ES6, \ldots)
+	\item Assembly (6502, 8086, i386, amd64, intel/at\&t syntax,
+	    SIMD, \ldots)
+	\item many others (Pascal, BASIC, UNIX Shell, Perl, \ldots)
+\end{itemize}
+
+\end{document}
