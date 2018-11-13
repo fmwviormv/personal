@@ -21,6 +21,14 @@
 \setlength{\TPVertModule}{1cm}
 \newcommand{\graynote}[1]{\hfill{\footnotesize\color{lightgray}#1}}
 \newcommand{\follownote}[1]{--- {\footnotesize\color{darkblue}#1}}
+\newcommand{\acmicpcnote}[2]{--- {\footnotesize\color{darkblue}
+	\href{https://icpc.baylor.edu/regionals/finder/#1/standings}
+	{#2}
+}}
+\newcommand{\codejamnote}[3]{--- {\footnotesize\color{darkblue}
+	\href{https://code.google.com/codejam/contest/#1/scoreboard#2}
+	{#3}
+}}
 \newcolumntype{N}{@{}m{0pt}@{}}
 
 \begin{document}
@@ -97,7 +105,8 @@ geometry, algorithm design, data structure design, linear algebra
 
 2011 & \parbox[t]{11cm}{
 	Ranked 4\textsuperscript{TH} among 76 teams 
-	    \follownote{ACM-ICPC Asia Tehran Regional Contest}
+	    \acmicpcnote{Tehran-2011}
+	    {ACM-ICPC Asia Tehran Regional Contest}
 } &\\[5mm]
 
 2012 & \parbox[t]{11cm}{
@@ -107,7 +116,8 @@ geometry, algorithm design, data structure design, linear algebra
 
 2012 & \parbox[t]{11cm}{
 	Ranked 1\textsuperscript{ST} among 66 teams
-	    \follownote{ACM-ICPC Asia Kanpur Regional Contest}
+	    \acmicpcnote{Kanpur-2012}
+	    {ACM-ICPC Asia Kanpur Regional Contest}
 } &\\[5mm]
 
 2013 & \parbox[t]{11cm}{
@@ -120,7 +130,8 @@ geometry, algorithm design, data structure design, linear algebra
 2013 & \parbox[t]{11cm}{
 	Ranked as 2\textsuperscript{ND} university among all
 	    universities in Iran
-	    \follownote{ACM-ICPC Asia Tehran Regional Contest}
+	    \acmicpcnote{Tehran-2013}
+	    {ACM-ICPC Asia Tehran Regional Contest}
 } &\\[5mm]
 
 2014 & \parbox[t]{11cm}{
@@ -134,9 +145,9 @@ geometry, algorithm design, data structure design, linear algebra
 } &\\[5mm]
 
 2017 & \parbox[t]{11cm}{
-	Ranked 376\textsuperscript{TH} in Round 3 (25\,288 contestants
-	    had participated from the beginning)
-	    \follownote{Google CodeJam}
+	Ranked 474\textsuperscript{TH} among 2\,514 contestants
+	    (25\,288 contestants had participated from the beginning)
+	    \codejamnote{5314486}{\#sp=451}{Google CodeJam Round 2}
 } &\\[5mm]
 \end{tabular}
 
