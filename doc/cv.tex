@@ -4,10 +4,12 @@
 \usepackage{xcolor}
 \usepackage{parskip}
 \usepackage{array}
+\usepackage[en-US]{datetime2}
 \usepackage[absolute,overlay]{textpos}
 \usepackage[left=6cm,top=2cm,right=2cm,bottom=2.5cm]{geometry}
 \usepackage{hyperref}
 
+\DTMlangsetup{ord=raise}
 \definecolor{lightgray}{HTML}{999999}
 \definecolor{green}{HTML}{006400}
 \definecolor{orange}{HTML}{C09020}
@@ -19,7 +21,8 @@
 \pagestyle{empty}
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
-\newcommand{\supersc}[1]{\textsuperscript{\textsc{#1}}}
+\newcommand{\birthdate}{\DTMdate{1990-05-10}}
+\newcommand{\supersc}[1]{\textsuperscript{#1}}
 \newcommand{\follownote}[1]{--- {\footnotesize\color{darkblue}#1}}
 \newcommand{\acmicpcnote}[2]{--- {\footnotesize\color{darkblue}
 	\href{https://icpc.baylor.edu/regionals/finder/#1/standings}
@@ -36,15 +39,6 @@
 
 \begin{textblock}{3.8}(1.5, 4)
 	\raggedleft
-	\section*{About}
-
-	Ali Farzanrad \\
-	28 years old
-
-	+98 911 871 3396 \\
-	\href{mailto:ali_farzanrad@riseup.net}{ali\_farzanrad@riseup.net} \\
-	\href{mailto:alif@aut.ac.ir}{alif@aut.ac.ir}
-
 	\section*{Languages}
 
 	Native Persian \\
@@ -66,15 +60,14 @@
 
 \end{textblock}
 
-\section*{{\color{blue}Interests}}
-\begin{itemize}
-	\item Theory of Computer Science, Theory of Computation,
-	    Computational Complexity
-	\item Computational Geometry, Computer Graphics
-	\item Graph Theory, Discrete Mathematics
-	\item Numerical Linear Algebra, Numerical Analysis
-	\item Theory of Automata \& Languages, Compiler Design
-\end{itemize}
+\section*{{\color{blue}About}}
+
+\begin{tabbing}
+Birth Date: {\birthdate} \\
+Phone: +98 911 871 3396 \\
+Email:	\= \href{mailto:ali_farzanrad@riseup.net}{ali\_farzanrad@riseup.net} \\
+	\> \href{mailto:alif@aut.ac.ir}{alif@aut.ac.ir}
+\end{tabbing}
 
 \section*{{\color{red}Education}}
 
@@ -106,6 +99,16 @@
 	\end{tabular}
 } &\\[5mm]
 \end{tabular}
+
+\section*{{\color{blue}Interests}}
+\begin{itemize}
+	\item Theory of Computer Science, Theory of Computation,
+	    Computational Complexity
+	\item Computational Geometry, Computer Graphics
+	\item Graph Theory, Discrete Mathematics
+	\item Numerical Linear Algebra, Numerical Analysis
+	\item Theory of Automata \& Languages, Compiler Design
+\end{itemize}
 
 \section*{{\color{orange}Awards and \emph{Honors}}}
 \begin{tabular}{p{1cm}lN}
