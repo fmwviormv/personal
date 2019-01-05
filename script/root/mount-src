@@ -1,0 +1,10 @@
+#!/bin/sh
+
+umount /usr/src 2>/dev/null && echo /usr/src unmounted
+
+mount -t mfs -o rw,noatime,nodev,nosuid,-s=2G sd0a /usr/src && (
+		cd /path/to/github.com/openbsd/src.git &&
+		git archive master | tar -xf - -C /usr/src/
+	) &&
+	chown -R root:wsrc /usr/src/ &&
+echo /usr/src mounted

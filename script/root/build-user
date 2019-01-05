@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd /usr/src &&
+	make obj &&
+	make -j4 build &&
+	sysmerge &&
+	cd /dev &&
+	./MAKEDEV &&
+echo user build has been completed
+

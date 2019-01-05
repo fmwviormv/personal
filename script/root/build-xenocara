@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /usr/xenocara &&
+	make bootstrap &&
+	make obj &&
+	make -j4 build &&
+echo xenocara build has been completed
+

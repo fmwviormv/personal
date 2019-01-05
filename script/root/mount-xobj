@@ -1,0 +1,8 @@
+#!/bin/sh
+
+umount /usr/xobj 2>/dev/null && echo /usr/xobj unmounted
+
+mount -t mfs -o rw,noatime,nodev,-s=2G sd0a /usr/xobj &&
+	chown build:wobj /usr/xobj/ &&
+	chmod 770 /usr/xobj/ &&
+echo /usr/xobj mounted

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd /usr/src/sys/arch/amd64/compile/GENERIC.MP &&
+	make obj &&
+	date +%Y%m%d >obj/version &&
+	make config &&
+	make -j4 &&
+	make install &&
+	echo Reboot to new kernel

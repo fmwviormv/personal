@@ -1,0 +1,8 @@
+#!/bin/sh
+
+umount /usr/obj 2>/dev/null && echo /usr/obj unmounted
+
+mount -t mfs -o rw,noatime,nodev,-s=2G sd0a /usr/obj &&
+	chown build:wobj /usr/obj/ &&
+	chmod 770 /usr/obj/ &&
+echo /usr/obj mounted

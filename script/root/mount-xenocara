@@ -1,0 +1,10 @@
+#!/bin/sh
+
+umount /usr/xenocara 2>/dev/null && echo /usr/xenocara unmounted
+
+mount -t mfs -o rw,noatime,nodev,nosuid,-s=2G sd0a /usr/xenocara && (
+		cd /path/to/github.com/openbsd/xenocara.git &&
+		git archive master | tar -xf - -C /usr/xenocara/
+	) &&
+	chown -R root:wsrc /usr/xenocara/ &&
+echo /usr/xenocara mounted
