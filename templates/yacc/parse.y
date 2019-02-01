@@ -28,7 +28,7 @@ grammar:	/* empty */
 
 rule:		TSTRING {
 			printf("%s\n", $1.str);
-		}
+		} ;
 
 %%
 
