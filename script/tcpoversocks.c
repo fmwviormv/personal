@@ -282,7 +282,10 @@ peer_conr(const int fd, const short events, void *const arg)
 	    sizeof(p->inbuf) - p->inbuf_size,
 	    MSG_DONTWAIT);
 	if (res == 0 || (res < 0 && errno != EAGAIN)) {
-		warn("recv");
+		if (res < 0)
+			warn("recv");
+		else
+			warnx("unexpected reject by SOCKS server");
 		shutdown_early(p, fd);
 		return;
 	} else if (res <= 0)
@@ -382,6 +385,8 @@ peer_conw(const int fd, const short events, void *const arg)
 	if (res == 0 || (res < 0 && errno != EAGAIN)) {
 		if (res < 0)
 			warn("send");
+		else
+			warnx("unexpected reject by SOCKS server");
 		shutdown_early(p, fd);
 		return;
 	} else if (res <= 0)
