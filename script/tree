@@ -1,0 +1,75 @@
+#!/bin/sh
+
+cat << END
+#define add1(node, new) do { node[0] = (new); \\
+	node[0]->left = node[0]->right = NULL; } while (0)
+#define add(node, leftright, new) { --node; \\
+	if (!(node[0] = node[1]->leftright)) { \\
+		add1(node, node[1]->leftright = (new)); break; } }
+#define next(node) do { if (node[0]->right) \\
+	for (node[-1] = node[0]->right; (*--node)->left;) \\
+		node[-1] = node[0]->left; \\
+	else { while (node[1] && node[0] == node[1]->right) \\
+		++node; ++node; } } while (0)
+
+struct t {
+	struct t	*left, *right;
+	bool		 red;
+} *fix(struct t **);
+
+int
+main(void)
+{
+	static struct t	  buf[Size];
+	struct t	 *t = NULL;
+	for (int i; i < n; ++i) {
+		struct t	*index[64], **p = index + 64;
+		*--p = NULL;
+		if (!(*--p = t))
+			add1(p, buf + i);
+		else for (;;) {
+			if (value < (**p).value)
+				add(p, left, buf + i)
+			else if (value == (**p).value)
+				break;
+			else
+				add(p, right, buf + i)
+		}
+		(**p).value = value;
+		t = fix(p);
+	}
+	{
+		struct t	*index[64], **p = index + 64;
+		*--p = NULL;
+		if ((*--p = t))
+			for (; p[0]->left; --p)
+				p[-1] = p[0]->left;
+		while (*p)
+			next(p);
+	}
+	return 0;
+}
+
+struct t *
+fix(struct t **node)
+{
+#define FIX(l, r) { struct t *u = node[2]->r; \\
+	if (u && u->red) { (**++node).red = u->red = 0; \\
+		(**++node).red = 1; continue; } \\
+	if (node[0] == node[1]->r) { u = node[0]; \\
+		node[2]->l = u; node[1]->r = u->l; \\
+		u->l = node[0] = node[1]; node[1] = u; } \\
+	(u = *++node)->red = 0; node[1]->red = 1; \\
+	if (node[2]) { if (node[2]->left == node[1]) \\
+		node[2]->left = u; else node[2]->right = u; } \\
+	node[1]->l = u->r; u->r = node[0] = node[1]; node[1] = u; }
+
+	for (node[0]->red = 1; node[1] && node[1]->red; )
+		if (node[1] == node[2]->left)
+			FIX(left, right) else FIX(right, left)
+
+	while (node[1]) ++node;
+	node[0]->red = 0;
+	return node[0];
+}
+END
