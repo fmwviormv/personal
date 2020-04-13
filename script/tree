@@ -6,10 +6,10 @@ cat << END
 #define add(node, leftright, new) { --node; \\
 	if (!(node[0] = node[1]->leftright)) { \\
 		add1(node, node[1]->leftright = (new)); break; } }
-#define next(node) do { if (node[0]->right) \\
-	for (node[-1] = node[0]->right; (*--node)->left;) \\
-		node[-1] = node[0]->left; \\
-	else { while (node[1] && node[0] == node[1]->right) \\
+#define next(node, l, r) do { if (node[0]->r) \\
+	for (node[-1] = node[0]->r; (*--node)->l;) \\
+		node[-1] = node[0]->l; \\
+	else { while (node[1] && node[0] == node[1]->r) \\
 		++node; ++node; } } while (0)
 
 struct t {
@@ -45,7 +45,7 @@ main(void)
 			for (; p[0]->left; --p)
 				p[-1] = p[0]->left;
 		while (*p)
-			next(p);
+			next(p, left, right);
 	}
 	return 0;
 }
