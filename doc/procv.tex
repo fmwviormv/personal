@@ -24,6 +24,12 @@
 \newcommand{\birthdate}{\DTMdate{1990-05-10}}
 \newcommand{\supersc}[1]{\textsuperscript{#1}}
 \newcommand{\follownote}[1]{--- {\footnotesize\color{darkblue}#1}}
+\newcommand{\tasks}{{\footnotesize\color{darkblue}Tasks}}
+\newcommand{\tech}{{\footnotesize\color{darkblue}Technologies}}
+\newcommand{\prog}{{\footnotesize\color{green}Programming Language:}}
+\newcommand{\os}{{\footnotesize\color{green}Operating System:}}
+\newcommand{\vcs}{{\footnotesize\color{green}Version Controls:}}
+\newcommand{\issue}{{\footnotesize\color{green}Issue Tracking:}}
 \newcommand{\acmicpcnote}[2]{--- {\footnotesize\color{darkblue}
 	\href{https://icpc.baylor.edu/regionals/finder/#1/standings}
 	{#2}
@@ -63,7 +69,11 @@
 \begin{tabular}{rl}
 Birth Date: & {\birthdate} \\
 Phone:	& +98 911 871 3396 \\
-Email:	& \href{mailto:ali_farzanrad@riseup.net}{ali\_farzanrad@riseup.net}
+Email:	& \href{mailto:ali_farzanrad@riseup.net}
+	    {ali\_farzanrad@riseup.net} \\
+Links:	& \href{https://linkedin.com/in/ali-farzanrad-0635959b}
+	    {LinkedIn} \\
+	& \href{https://github.com/fmwviormv}{GitHub}
 \end{tabular}
 
 \section*{{\color{red}Education}}
@@ -97,8 +107,8 @@ Email:	& \href{mailto:ali_farzanrad@riseup.net}{ali\_farzanrad@riseup.net}
 
 \section*{{\color{blue}Interests}}
 \begin{itemize}
-	\item Low level programming (C, socket programming)
-	\item Concurrent systems
+	\item Low level programming (C, socket programming, libevent)
+	\item Concurrency (event-based, multi-threading, mutex/semaphore)
 	\item Algorithms (graph, geometry, compiler)
 \end{itemize}
 
@@ -163,36 +173,71 @@ Email:	& \href{mailto:ali_farzanrad@riseup.net}{ali\_farzanrad@riseup.net}
 
 \section*{{\color{red}Professional \emph{Experience}}}
 \begin{tabbing}
-\hspace{2.5cm}\=\kill
-2019--2020 \>\parbox[t]{10.5cm}{
-	Product-Planning Algorithm Design
-	\follownote{JAM Persia}
-} \\[2mm]
-2017--2018 \>\parbox[t]{10.5cm}{
-	Safety-Critical Software Development
-	\follownote{Maharan International}
-} \\[2mm]
-2017--2018 \>\parbox[t]{10.5cm}{
-	Formal Specification/Verification using Frama-C
-	\follownote{Maharan International}
-} \\[2mm]
-2012--2016 \>\parbox[t]{10.5cm}{
-	GIS and map projections
-	\follownote{Negasht Co.}
-} \\[2mm]
-2012--2016 \>\parbox[t]{10.5cm}{
-	Relational Databases, and Spatial data types
-	\follownote{Negasht Co.}
-} \\[2mm]
+\hspace{2.5cm}\=\hspace{3.5cm}\=\kill
+2020--current \>Mahsan \\
+\tasks \>\parbox[t]{10.5cm}{
+	Developing command-line interface for company's products,
+	specially for firewall management.
+
+	Command-line is responsible for interacting with user through
+	system serial console and remote ssh pty session.
+
+	User commands varies from system configuration and diagnostic
+	to network utilities with support for auto-completion and
+	smart error handling (with nice user understandable messages).
+} \\
+\tech\>\prog\> Python 3 \\
+\>\os\> Ubuntu \\
+\>\vcs\> Git \\
+\>\issue\> Gitlab \\[2mm]
+2019--2020 \>JAM Persia \\
+\tasks \>\parbox[t]{10.5cm}{
+	Developing product-planning algorithm for company's ERP system.
+
+	The algorithm is responsible for finding best selection and
+	schedule of resources to produce required products in time.
+} \\
+\tech\>\prog\> C\# \\
+\>\os\> Windows \\
+\>\vcs\> SVN \\
+\>\issue\> Jira \\[2mm]
+2017--2018 \>Maharan International \\
+\tasks \>\parbox[t]{10.5cm}{
+	Developing Train Control System based on ERTMS specifications.
+
+	We were developing core functionalities for processing and
+	sending high-level signals.
+} \\
+\tech\>\prog\> C with Frama-C \\
+\>\os\> Windows \\
+\>\vcs\> TFS \\
+\>\issue\> Microsoft Project \\[2mm]
+2012--2016 \>Negasht Co. \\
+\tasks \>\parbox[t]{10.5cm}{
+	Developing web-based applications with maps and POI data.
+
+	Developing web-services for generating map tiles.
+
+	Developing web-services for generating static maps from vectors.
+
+	Developing web-services for finding shortest path by giving a
+	simple pair of latitude and longitudes.
+
+	Developing an Android app with so many different survey forms.
+} \\
+\tech\>\prog\> C\#, JavaScript, C++, and Java \\
+\>\os\> Windows \\
+\>\vcs\> Microsoft Visual SourceSafe \\
+\>\issue\> Company-specific issue tracker \\[2mm]
 \end{tabbing}
 
 \section*{{\color{purple}Programming \emph{Languages}}}
 \begin{itemize}
 	\item C (C89/90, C99, C11, libevent, pthreads, yacc, lex)
+	\item Python (Python 3.x, async)
 	\item C++ (C++98, C++11, C++14)
 	\item Java (Java 7, Java 8)
 	\item C\# (.Net Framework 4.x, ASP.NET MVC, .Net Core 2.x \& 3.x)
-	\item Python (Python 3.x, Django)
 	\item JavaScript (ES5.x, ES6)
 	\item Assembly (6502, 8086, i386, amd64, intel/at\&t syntax,
 	    SIMD)
