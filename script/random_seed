@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# improve random number generation
+dd if=random_seed.bin of=/dev/random bs=65536 count=1 status=none
